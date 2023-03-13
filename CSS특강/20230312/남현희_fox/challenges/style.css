@@ -1,0 +1,28 @@
+body {
+  background-image: url(./images/bg.png);
+  background-repeat: no-repeat;
+}
+
+.container {
+  color: #fff;
+  width: 300px;
+  margin: 100px auto;
+}
+
+.contents {
+  background-image: url(./images/green.png);
+  background-color: #93572e;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 7px 1px #65422a;
+}
+
+.contents h1 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contents p {
+  margin-bottom: 10px;
+}
