@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      background-color: antiquewhite;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .end {
+      flex-direction: column-reverse;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      color: white;
+    }
+
+    .blue {
+      background-color: royalblue;
+    }
+
+    .pink {
+      background-color: salmon;
+    }
+
+    .yellow {
+      background-color: gold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="item blue">A</div>
+      <div class="item pink">B</div>
+      <div class="item yellow">C</div>
+    </div>
+    <div class="container center">
+      <div class="item blue">D</div>
+      <div class="item yellow">E</div>
+    </div>
+    <div class="container end">
+      <div class="item blue">F</div>
+      <div class="item pink">G</div>
+      <div class="item yellow">H</div>
+    </div>
+  </div>
+</body>
+
+</html>
