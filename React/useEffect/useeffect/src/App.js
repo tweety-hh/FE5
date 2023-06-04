@@ -5,9 +5,14 @@ function Time(props) {
   const [hour, setHour] = useState(today.getHours());
   const [min, setMin] = useState(today.getMinutes());
   const [sec, setSec] = useState(today.getSeconds());
-  console.log('렌더링이 됩니다..?'); //렌더링이 잘 되는지 확인용! 꼭 넣고 진행해주세요.
-
-  useEffect(() => {});
+  // console.log('렌더링이 됩니다..?'); //렌더링이 잘 되는지 확인용! 꼭 넣고 진행해주세요.
+  setInterval(() => {
+    const t = new Date();
+    setToday(t);
+    setHour(t.getHours());
+    setMin(t.getMinutes());
+    setSec(t.getSeconds());
+  }, 1000);
 
   return (
     <div>
